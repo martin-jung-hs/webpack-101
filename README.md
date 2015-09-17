@@ -36,5 +36,8 @@ To run local server for testing
 ```
 npm run dev
 ```
+After running local server,
+
 For entry point 1, go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
+
 For entry point 2, Go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
