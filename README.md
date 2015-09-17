@@ -4,7 +4,7 @@ A simple example of using Webpack with React JS and ES6.
 This repo is an exercise for a blog post (link). It demonstrates the following webpack configurations
  * how to build multiple entry points
  * how to build different resources (js, jsx, less, png) using loaders
- * how to build a common bundle for the entry points
+ * how to build a common bundle for the entry points, using a plugin
  * how to build unique bundles for each entry point
 
 
@@ -40,7 +40,7 @@ root
  |  |- variable.less // color variables
 ```
 
-## Development Workflow
+## Development workflow
 ```shell
 # To install dependencies
 npm install
@@ -59,7 +59,7 @@ For entry point 1, please go to [http://localhost:8080/webpack-dev-server/entry1
 
 For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
 
-## webpack configuration
+## Webpack configuration for this repo
 ```shell
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
