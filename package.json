@@ -1,0 +1,26 @@
+{
+  "name": "Hootsuite-Webpack-101",
+  "version": "0.0.1",
+  "description": "Basic Webpack tutorial",
+  "scripts": {
+    "build": "rm -rf dist/* && webpack --display-error-details",
+    "dev": "webpack-dev-server --content-base dist/"
+  },
+  "devDependencies": {
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "expose-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.0",
+    "imports-loader": "^0.6.4",
+    "less-loader": "^2.2.0",
+    "npm": "^2.13.3",
+    "react": "^0.13.3",
+    "style-loader": "^0.12.3",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "1.10.1"
+  }
+}
