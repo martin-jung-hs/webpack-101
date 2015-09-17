@@ -1,5 +1,8 @@
 # webpack-101
-A simple example of using Webpack with React JS and ES6
+A simple example of using Webpack with React JS and ES6. 
+
+This repo is an exercise for a blog post (link). It demonstrates a webpack configuration for multiple entry points and for building js, jsx, less, png resources.
+
 
 ## Project structure
 
@@ -38,6 +41,6 @@ npm run dev
 ```
 After running local server,
 
-For entry point 1, go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
+For entry point 1, please go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
 
-For entry point 2, Go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
+For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)

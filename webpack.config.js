@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
 
 var rootDir = __dirname;
 var srcDir = rootDir + "/src";
@@ -33,6 +34,11 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "commons",
+            filename: "commons.js",
+            chunks: ["entry1", "entry2"]
+        }),
         new HtmlWebpackPlugin({
             title: 'Boxes',
             filename: '/entry1.html', // relative path from output path
