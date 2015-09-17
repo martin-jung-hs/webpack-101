@@ -3,6 +3,7 @@ A simple example of using Webpack with React JS and ES6
 
 ## Project structure
 
+```shell
 root
  |- dist/           // bundles will be built and copied into this directory for distribution
  |
@@ -20,7 +21,7 @@ root
  |  |- base.less    // base styles for all entry points
  |  |- mixins.less  // less mixins 
  |  |- variable.less // color variables
-
+```
 
 ## Development Workflow
 ```shell
@@ -35,5 +36,5 @@ To run local server for testing
 ```
 npm run dev
 ```
-Go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
-Go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
+For entry point 1, go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
+For entry point 2, Go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
