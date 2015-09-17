@@ -6,7 +6,7 @@ var srcDir = rootDir + "/src";
 var distDir = rootDir + "/dist";
 
 module.exports = {
-    context: rootDir,
+    context: rootDir, // a base directory to resolve the “entry”
 
     entry: {
         entry1: srcDir + '/entry1.js',
@@ -15,13 +15,14 @@ module.exports = {
 
     output: {
         path: distDir,
-        filename: "[name].js"
+        filename: "[name].js" // [name] means we are going to use the "key" value of each entry as the bundle file name
     },
 
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'] // resolve file extentions so that we don't have to specify the extention for js and jsx files
     },
 
+    // loaders for different types of resources. For jsx and es6, we uses babel loader.
     module: {
         loaders: [
             { test: /\.html$/, exclude: /tmp/, loader: "ng-cache-loader" },
@@ -41,13 +42,13 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Boxes',
-            filename: '/entry1.html', // relative path from output path
-            template: srcDir + '/entry1.html'
+            filename: '/entry1.html', // relative path from "output" directory
+            template: srcDir + '/entry1.html' // source file
         }),
         new HtmlWebpackPlugin({
             title: 'Circles',
-            filename: '/entry2.html',
-            template: srcDir + '/entry2.html'
+            filename: '/entry2.html', // relative path from "output" directory
+            template: srcDir + '/entry2.html' // source file
         })
     ]
 };

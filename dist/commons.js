@@ -20883,7 +20883,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #e3e3e3;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #eeeeee;\n}\n", ""]);
 
 	// exports
 
