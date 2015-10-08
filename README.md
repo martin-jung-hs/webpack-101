@@ -1,7 +1,7 @@
 # webpack-101
 A simple example of using Webpack with React JS and ES6. 
 
-This repo is an exercise for a blog post (link). It demonstrates the following webpack configurations
+This repo is an exercise for a blog post (http://code.hootsuite.com/webpack-101/). It demonstrates the following webpack configurations
  * how to build multiple entry points
  * how to build different resources (js, jsx, less, png) using loaders
  * how to build a common bundle for the entry points, using a plugin
