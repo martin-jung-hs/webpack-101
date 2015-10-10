@@ -64,11 +64,11 @@ For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2
 
 ## Screenshots
 
+Diagram of entry point 1:
 ![Alt text](/webpack-image-of-entry-point-1.png?raw=true "Diagram of entry point 1")
-Diagram of entry point 1
 
+Diagram of entry point 2:
 ![Alt text](/webpack-image-of-entry-point-2.png?raw=true "Diagram of entry point 2")
-Diagram of entry point 2
 
 ## Webpack configuration for this repo
 ```shell
