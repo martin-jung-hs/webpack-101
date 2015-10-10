@@ -60,15 +60,15 @@ After running local server,
 
 For entry point 1, please go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html). It serves common.js and entry1.js bundles. The common.js contains the shared image component and the entry1.js contains every box components.
 
-For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html). It serves common.js and entry2.js bundles. The common.js contains the shared image component and the entry2.js contains every circle components.
-
-## Screenshots
-
-Diagram of entry point 1:
 ![Alt text](/webpack-image-of-entry-point-1.png?raw=true "Diagram of entry point 1")
 
-Diagram of entry point 2:
+For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html). It serves common.js and entry2.js bundles. The common.js contains the shared image component and the entry2.js contains every circle components.
+
 ![Alt text](/webpack-image-of-entry-point-2.png?raw=true "Diagram of entry point 2")
+
+## Dependency diagram
+
+![Alt text](/dependency-diagram.png?raw=true "Dependency diagram")
 
 ## Webpack configuration for this repo
 ```shell
