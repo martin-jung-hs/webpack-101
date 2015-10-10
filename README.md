@@ -3,12 +3,15 @@ A simple example of using Webpack with React JS and ES6.
 
 This repo is an exercise for a blog post (http://code.hootsuite.com/webpack-101/). It demonstrates the following webpack configurations
  * how to build multiple entry points
+ * how to use/share components in each entry point
  * how to build different resources (js, jsx, less, png) using loaders
  * how to build a common bundle for the entry points, using a plugin
  * how to build unique bundles for each entry point
 
 
 ## Project structure
+
+In the repo, “src” directory has two entry point files and seven React components: green, red and blue box components, green, red, and blue circle components and a shared image component. The “dist” directory has common.js, entry1.js and entry2.js bundles, built by Webpack.
 
 ```shell
 root
@@ -55,9 +58,15 @@ npm run dev
 ```
 After running local server,
 
-For entry point 1, please go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html)
+For entry point 1, please go to [http://localhost:8080/webpack-dev-server/entry1.html](http://localhost:8080/webpack-dev-server/entry1.html). It serves common.js and entry1.js bundles. The common.js contains the shared image component and the entry1.js contains every box components.
 
-For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html)
+For entry point 2, please go to [http://localhost:8080/webpack-dev-server/entry2.html](http://localhost:8080/webpack-dev-server/entry2.html). It serves common.js and entry2.js bundles. The common.js contains the shared image component and the entry2.js contains every circle components.
+
+## Screenshots
+
+![Alt text](/webpack-image-of-entry-point-1.png?raw=true "Diagram of entry point 1")
+
+![Alt text](/webpack-image-of-entry-point-2.png?raw=true "Diagram of entry point 2")
 
 ## Webpack configuration for this repo
 ```shell
